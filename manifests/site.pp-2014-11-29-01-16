@@ -1,0 +1,8 @@
+node /^s\d+puppet\.mkhoj\.com/ {
+    package { 'vim':
+		ensure => present,
+	}
+	package { 'wget':
+		ensure => present,
+	}
+}

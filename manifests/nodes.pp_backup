@@ -1,0 +1,9 @@
+node /^s\d+puppet\.mkhoj\.com/ {
+    include sudo
+        package { 'vim':
+		ensure => present,
+	}
+	package { 'wget':
+		ensure => present,
+	}
+}
